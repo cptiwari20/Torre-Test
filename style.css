@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --color-primary: black;
+  --color-secondary: white;
+  --color-tertiary: #dddddd;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.input-element {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--color-tertiary);
+  outline: none;
+  line-height: 1.8;
+  font-size: 1.5rem;
+}
+
+.fw-light {
+  font-weight: 200;
+}
+
+.fw-bold {
+  font-weight: 800;
+}
+
+.section-search-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-search {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.heading-main {
+  font-size: 3rem;
+}
+
+select {
+  width: 135px;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+  -webkit-appearance: none;
+  background-position-x: 105px;
+  color: #757575;
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */
