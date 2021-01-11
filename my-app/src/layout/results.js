@@ -2,56 +2,56 @@ import React from 'react';
 
 export default ({result}) => {
     return <>
-        <div class="job-card">
-              <div class="job-card-top">
-                <div class="job-logo"></div>
-                <div class="job-details">
-                  <div class="job-details-main">
+        <div className="job-card">
+              <div className="job-card-top">
+                <div className="job-logo"></div>
+                <div className="job-details">
+                  <div className="job-details-main">
                     <h3>Software developers for startup backed by early SpaceX and Facebook investors.</h3>
                     <span>Fullstack Development - Remote</span>
                     <span>Torre Labs</span>
-                    <span class="fw-bold">USD $50k - $80k / year</span>
+                    <span className="fw-bold">USD $50k - $80k / year</span>
                   </div>
-                  <div class="job-details-extra">
-                    <div class="mini-card">
-                      <span class="pill-top"></span>
-                      <div class="span">Requirements:</div>
-                      <span class="pill">php</span>
-                      <span class="pill">node.js</span>
-                      <span class="pill">react</span>
-                      <span class="pill">aws</span>
+                  <div className="job-details-extra">
+                    <div className="mini-card">
+                      <span className="pill-top"></span>
+                      <div className="span">Requirements:</div>
+                      <span className="pill">php</span>
+                      <span className="pill">node.js</span>
+                      <span className="pill">react</span>
+                      <span className="pill">aws</span>
                     </div>
 
-                    <div class="mini-card">
-                      <span class="pill-top"></span>
-                      <div class="span">Team Members:</div>
-                      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="team-member" class="team-member" />
-                      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="team-member" class="team-member" />
-                      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="team-member" class="team-member" />
-                      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="team-member" class="team-member" />
-                      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="team-member" class="team-member" />
-                      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="team-member" class="team-member" />
-                      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="team-member" class="team-member" />
+                    <div className="mini-card">
+                      <span className="pill-top"></span>
+                      <div className="span">Team Members:</div>
+                      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="team-member" className="team-member" />
+                      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="team-member" className="team-member" />
+                      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="team-member" className="team-member" />
+                      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="team-member" className="team-member" />
+                      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="team-member" className="team-member" />
+                      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="team-member" className="team-member" />
+                      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" alt="team-member" className="team-member" />
                     </div>
 
-                    <div class="mini-card">
-                      <span class="pill-top"></span>
-                      <div class="span">Latest Questions:</div>
-                      <span class="question">I have updated my Genoma, is this updated in yours?</span>
+                    <div className="mini-card">
+                      <span className="pill-top"></span>
+                      <div className="span">Latest Questions:</div>
+                      <span className="question">I have updated my Genoma, is this updated in yours?</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="job-card-bottom">
-                <div class="job-cta">
-                  <div class="job-cta-left">
-                    <span class="time fw-bold">28 days, 9 hours, 2 mins left.</span>
-                    <button class="btn-cta">Quick Apply</button>
-                    <button class="btn-cta">Ask question</button>
-                    <button class="btn-cta">Refer Someone</button>
+              <div className="job-card-bottom">
+                <div className="job-cta">
+                  <div className="job-cta-left">
+                    <span className="time fw-bold">28 days, 9 hours, 2 mins left.</span>
+                    <button className="btn-cta">Quick Apply</button>
+                    <button className="btn-cta">Ask question</button>
+                    <button className="btn-cta">Refer Someone</button>
                   </div>
-                  <div class="job-cta-right">
-                    <button class="btn-cta btn-cta-main fw-bold">View</button>
+                  <div className="job-cta-right">
+                    <button className="btn-cta btn-cta-main fw-bold">View</button>
                   </div>
                 </div>
               </div>

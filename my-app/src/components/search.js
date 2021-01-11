@@ -16,7 +16,10 @@ export default ({getResults}) => {
         }).then(async (res) => {
             let data = await res.json()
             setSetResults(data.results)
-            getResults(data.results);
+            getResults({
+                seachType,
+                results: data.results
+            });
         }).catch((e) => {   
             console.log(e)
         })
