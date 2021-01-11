@@ -8,8 +8,8 @@
 :root {
   --color-primary: #2c2d1e;
   --color-secondary: #f3f3f3;
-  --color-tertiary: #dddddd;
-  --color-least-imp: grey;
+  --color-tertiary: #ececec;
+  --color-least-imp: rgb(167, 167, 167);
   --font-x-small: 0.8rem;
   --font-reg: 1rem;
   --font-med: 1.3rem;
@@ -21,6 +21,10 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1.8;
   color: var(--color-primary);
+}
+
+.font-x-small {
+  font-size: var(--font-x-small);
 }
 
 .input-element {
@@ -60,6 +64,8 @@ body {
   width: 150%;
   overflow: hidden;
   background-color: var(--color-dominant);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .section-container-right {
@@ -222,5 +228,81 @@ select {
   background-color: var(--color-dominant);
   color: var(--color-primary);
   text-transform: uppercase;
+}
+
+.section-people {
+  padding: 2rem;
+}
+
+.people-card {
+  padding: 1rem;
+  width: 25%;
+  background-color: var(--color-tertiary);
+  -webkit-box-shadow: 0 0 20px var(--color-tertiary);
+          box-shadow: 0 0 20px var(--color-tertiary);
+  border-radius: 5px;
+}
+
+.people-card-image-section {
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.people-card-image-section img {
+  border-radius: 50%;
+}
+
+.people-card-image-section span {
+  font-size: var(--font-x-small);
+}
+
+.people-card-about-section {
+  margin-bottom: 1rem;
+}
+
+.people-card-about-section span {
+  font-size: var(--font-x-small);
+  color: var(--color-least-imp);
+}
+
+.people-card-contact-section {
+  margin-bottom: 1rem;
+}
+
+.people-card-contact-section > span {
+  color: var(--color-least-imp);
+  font-size: var(--font-x-small);
+}
+
+.people-card .skill-card {
+  background-color: var(--color-secondary);
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.people-card .skill-card span {
+  display: block;
+}
+
+.people-card .btn-people {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  text-transform: uppercase;
+  background-color: var(--color-dominant);
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.people-card .btn-people:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 /*# sourceMappingURL=style.css.map */
