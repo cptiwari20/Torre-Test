@@ -7,8 +7,8 @@ export default ({result}) => {
                 <div class="job-logo"></div>
                 <div class="job-details">
                   <div class="job-details-main">
-                    <h3>Software developers for startup backed by early SpaceX and Facebook investors.</h3>
-                    <span>Fullstack Development - Remote</span>
+                    <h3>{result.objective}</h3>
+                    <span>{result.type}</span>
                     <span>Torre Labs</span>
                     <span class="fw-bold">USD $50k - $80k / year</span>
                   </div>

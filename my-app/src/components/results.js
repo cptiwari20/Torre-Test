@@ -1,8 +1,14 @@
-import Layout from '../layout/results';
+import React from 'react';
+import JobCard from './JobCard';
 
-export default () => {
-    return <Layout>
-        <h2 className="fw-bold color-grey">Jobs available:</h2>
-          <div className="section-job-listing"></div>
-    </Layout>
+export default ({results}) => {
+    return <>
+        <div className="section-container-right">
+            <div className="section-job-listing-container">
+                {results.length && results.map(result => {
+                   return <JobCard result={result} />
+                })}
+            </div>
+        </div>
+    </>
 }

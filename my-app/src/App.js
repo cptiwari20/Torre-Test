@@ -1,13 +1,11 @@
 
 import './App.css';
-import Results from './components/results';
-import Search from './components/search';
+import Home from './components/Home';
 
 function App() {
   return (
     <div className="container section-container">
-      <Search />
-      {/* <Results/> */}
+      <Home />
     </div>
   );
 }
