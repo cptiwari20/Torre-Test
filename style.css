@@ -6,19 +6,21 @@
 }
 
 :root {
-  --color-primary: black;
-  --color-secondary: white;
+  --color-primary: #2c2d1e;
+  --color-secondary: #f3f3f3;
   --color-tertiary: #dddddd;
+  --color-least-imp: grey;
+  --font-x-small: 0.8rem;
+  --font-reg: 1rem;
+  --font-med: 1.3rem;
+  --font-large: 3rem;
+  --color-dominant: #cedd3a;
 }
 
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.8;
-}
-
-.container {
-  max-width: 1366px;
-  margin: 0 auto;
+  color: var(--color-primary);
 }
 
 .input-element {
@@ -29,25 +31,40 @@ body {
   background-color: var(--color-tertiary);
   outline: none;
   line-height: 1.8;
-  font-size: 1.5rem;
-}
-
-.fw-light {
-  font-weight: 200;
+  font-size: var(--font-med);
 }
 
 .fw-bold {
   font-weight: 800;
 }
 
-.section-search-container {
+.color-grey {
+  color: grey;
+}
+
+.section-container {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-container-left {
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 150%;
+  overflow: hidden;
+  background-color: var(--color-dominant);
+}
+
+.section-container-right {
+  padding: 2rem;
+  overflow: auto;
 }
 
 .btn-search {
@@ -55,10 +72,17 @@ body {
   color: var(--color-secondary);
   cursor: pointer;
   margin-left: 1rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn-search:hover {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
 }
 
 .heading-main {
-  font-size: 3rem;
+  font-size: var(--font-large);
 }
 
 select {
@@ -66,7 +90,137 @@ select {
   background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
   -webkit-appearance: none;
   background-position-x: 105px;
-  color: #757575;
+  color: var(--color-primary);
   outline: none;
+}
+
+.section-job-listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.job-card {
+  border-radius: 5px;
+  background-color: var(--color-tertiary);
+  -webkit-box-shadow: 0 0 20px var(--color-tertiary);
+          box-shadow: 0 0 20px var(--color-tertiary);
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.job-card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+.job-card span {
+  font-size: var(--font-x-small);
+  display: inline-block;
+}
+
+.job-logo {
+  height: 100px;
+  min-width: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  margin-right: 1rem;
+  background-image: url("https://torre-media.s3-us-west-2.amazonaws.com/subtorres/Gig/torre.png");
+}
+
+.job-details-main h3 {
+  line-height: 1.2;
+}
+
+.job-details-main span {
+  display: block;
+}
+
+.job-details-extra > div {
+  width: 33%;
+}
+
+.job-details-extra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.job-details-extra .pill {
+  padding: 0.2rem 0.5rem;
+  background-color: var(--color-least-imp);
+  border-radius: 50px;
+  font-size: var(--font-x-small);
+  margin-bottom: 0.5rem;
+}
+
+.job-details-extra .team-member {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.job-details-extra .question {
+  font-style: italic;
+}
+
+.job-details-extra .span {
+  font-size: var(--font-x-small);
+  color: var(--color-least-imp);
+}
+
+.job-details-extra .mini-card {
+  margin-right: 2rem;
+}
+
+.job-details-extra .mini-card:last-child {
+  margin-right: 0;
+}
+
+.job-card-bottom {
+  background-color: var(--color-secondary);
+  padding: 1.5rem 1rem;
+}
+
+.job-card-bottom .job-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.job-card-bottom .job-cta .btn-cta {
+  display: inline-block;
+  background-color: var(--color-least-imp);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: var(--color-secondary);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.job-card-bottom .job-cta .btn-cta:hover,
+.job-card-bottom .job-cta .btn-cta-main:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+
+.job-card-bottom .job-cta .btn-cta-main {
+  background-color: var(--color-dominant);
+  color: var(--color-primary);
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
