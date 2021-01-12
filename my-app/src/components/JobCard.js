@@ -52,7 +52,7 @@ export default ({ result }) => {
             <div className="mini-card">
               <span className="pill-top"></span>
               <div className="span">Requirements:</div>
-              {result.skills.length && result.skills.map((skill, i) => {
+              {result.skills && result.skills.length && result.skills.map((skill, i) => {
                 return <span key={i + skill.name} className="pill">{skill.name}</span>
               })}
             </div>
@@ -60,7 +60,7 @@ export default ({ result }) => {
             <div className="mini-card">
               <span className="pill-top"></span>
               <div className="span">Team Members:</div>
-              {result.members.length && result.members.map((member, i) => {
+              {result.members && result.members.length && result.members.map((member, i) => {
                 return <a href={`https://bio.torre.co/en/${member.username}`} target="_blank">
                   <img src={member.picture ?? 'https://torre-media.s3-us-west-2.amazonaws.com/subtorres/Gig/torre.png'} alt="team-member" className="team-member" />
                 </a>

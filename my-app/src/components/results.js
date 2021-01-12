@@ -15,7 +15,7 @@ export default ({results, type}) => {
                             <ProfileCard  result={result} /> 
                         </div>
                     }) : results.length && results.map((result, i) => {
-                        return <div className="section-job-listing " key={i}> <JobCard  result={result} /></div>
+                        return <div key={i} className="section-job-listing " key={i}> <JobCard  result={result} /></div>
                     })}
             </div>
         </div>
