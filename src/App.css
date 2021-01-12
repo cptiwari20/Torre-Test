@@ -1,11 +1,13 @@
 /* I am implementing this file after creating the design,
 Further we can breakdown component wise and use according to frontend design */
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -62,10 +64,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 40rem;
   overflow: hidden;
   background-color: var(--color-dominant);
   border-top-right-radius: 5px;
@@ -73,15 +76,15 @@ body {
 }
 
 .section-container-center {
-  padding: 2rem;
+  min-width: 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 150%;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-grow: 1;
   overflow: hidden;
   background-color: var(--color-dominant);
   border-top-right-radius: 5px;
@@ -89,6 +92,7 @@ body {
 }
 
 .section-container-right {
+  flex-grow: 1;
   padding: 2rem;
   overflow: auto;
 }
@@ -97,9 +101,15 @@ body {
   background-color: var(--color-primary);
   color: var(--color-secondary);
   cursor: pointer;
-  margin-left: 1rem;
+  margin-top: 1rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  min-width: 10rem;
+  display: block;
+}
+
+.search-input {
+  min-width: 15rem;
 }
 
 .btn-search:hover {
@@ -125,17 +135,17 @@ select {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .job-card {
   border-radius: 5px;
   background-color: var(--color-tertiary);
   -webkit-box-shadow: 0 0 20px var(--color-tertiary);
-          box-shadow: 0 0 20px var(--color-tertiary);
+  box-shadow: 0 0 20px var(--color-tertiary);
   margin-bottom: 2rem;
   width: 100%;
 }
@@ -180,13 +190,25 @@ select {
   margin-bottom: 1rem;
 }
 
+.section-job-listing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-job-listing-container .section-people {
+  padding: 0;
+  width: 48%;
+  margin-bottom: 2rem;
+}
+
 .pill {
   padding: 0.2rem 0.5rem;
   background-color: var(--color-least-imp);
   border-radius: 50px;
   font-size: var(--font-x-small);
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
+  margin-bottom: 0.2rem;
+  margin-right: 0.2rem;
   display: inline;
 }
 
@@ -223,8 +245,8 @@ select {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .job-card-bottom .job-cta .btn-cta {
@@ -253,6 +275,10 @@ select {
   text-transform: uppercase;
 }
 
+.job-card-bottom .time {
+  margin-right: 1rem;
+}
+
 .section-people {
   padding: 2rem;
 }
@@ -262,7 +288,7 @@ select {
   width: 100%;
   background-color: var(--color-tertiary);
   -webkit-box-shadow: 0 0 20px var(--color-tertiary);
-          box-shadow: 0 0 20px var(--color-tertiary);
+  box-shadow: 0 0 20px var(--color-tertiary);
   border-radius: 5px;
 }
 
@@ -339,6 +365,6 @@ select {
 }
 /*# sourceMappingURL=style.css.map */
 
-.error{
-  color: red;
+.error {
+  color: rgb(136, 0, 0);
 }
