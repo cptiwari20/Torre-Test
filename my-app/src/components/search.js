@@ -4,8 +4,10 @@ export default ({getResults}) => {
     const [searchString, setSearchString] = useState('');
     const [seachType, setSeachType] = useState('opportunities');
     const [results, setSetResults] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     const handleSearch = (e) => {
+        setLoading(true)
         const url = `https://search.torre.co/${seachType}/_search/?offset=0&size=10&aggregate=true&lang=en`
         fetch(url, {
             method: 'POST',
@@ -20,8 +22,10 @@ export default ({getResults}) => {
                 seachType,
                 results: data.results
             });
+            setLoading(false)
         }).catch((e) => {   
             console.log(e)
+            setLoading(false)
         })
     }
 
@@ -39,7 +43,9 @@ export default ({getResults}) => {
             <option value="opportunities">Jobs</option>
             <option value="people">People</option>
         </select>
-        <button onClick={handleSearch} className="input-element btn-search fw-bold">Find</button>
+        <button onClick={handleSearch} className="input-element btn-search fw-bold">
+            {loading ? "Loading..." : "Find"}  
+        </button>
       </div>
     </div>   
 }

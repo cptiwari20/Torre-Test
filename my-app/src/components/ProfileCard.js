@@ -4,7 +4,7 @@ export default ({result}) => {
     return <>
         <div className="people-card">
         <div className="people-card-image-section">
-          <img src={result.picture} alt="profile-pic" />
+          <img src={result.picture ?? "https://torre-media.s3-us-west-2.amazonaws.com/subtorres/Gig/torre.png"} alt="profile-pic" />
           <h2>{result.name}</h2>
           <span>{result.professionalHeadline}</span>
         </div>
