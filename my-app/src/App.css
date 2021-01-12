@@ -338,3 +338,7 @@ select {
   color: var(--color-secondary);
 }
 /*# sourceMappingURL=style.css.map */
+
+.error{
+  color: red;
+}
